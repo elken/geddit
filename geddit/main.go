@@ -3,11 +3,11 @@ package main
 import (
     "fmt"
     "log"
-    "github.com/elken/reddit"
+    "github.com/elken/geddit"
 )
 
 func main() {
-    items, err := reddit.Get("golang")
+    items, err := geddit.Get("golang")
     if err != nil {
         log.Fatal(err)
     }
